@@ -1,4 +1,12 @@
+<?php
+/**
+* @author Jourdes Romain 24/09/2014
+*
+*/
+?>
+
 <?php 
+    // Fonction pour supprimer les mauvais caractères présent dans le nom du module passé
     function affichage($str) {
 	    $str = htmlspecialchars(trim(strtolower($str)));
 	    $str_noWhiteSpace = str_replace(' ', '_', $str);
